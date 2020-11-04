@@ -2,10 +2,17 @@ import React from 'react';
 import './App.css';
 import Accordion from "./components/Accordion/Accordion";
 import {Rating} from "./components/Rating";
+import OnOff from "./components/OnOff/OnOff";
+
 
 function App() {
+    console.log("APP rendering")
     return (
         <div>
+            <OnOff/>
+        </div>
+
+        /*<div>
             <Accordion titleValue={"Menu"} collapsed={true}/>
             <Accordion titleValue={"Users"} collapsed={false}/>
 
@@ -15,14 +22,15 @@ function App() {
             <Rating value={3}/>
             <Rating value={4}/>
             <Rating value={5}/>
-        </div>
+        </div>*/
     );
 
     type PageTitlePropsType = {
         title: string
     }
+
     function PageTitle(props: PageTitlePropsType) {
-       console.log("PageTitle rendering")
+        console.log("PageTitle rendering")
         return (
             <h1>{props.title}</h1>
         )
