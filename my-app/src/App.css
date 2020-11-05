@@ -1,32 +1,35 @@
-App {
-    padding: 10px;
+body {
+    background-color: mediumspringgreen;
 }
 
+.App {
+    margin: 0 0 15px 15px;
+}
+
+
 .square {
-    margin: 15px;
     display: flex;
 }
 
-.square1{
-    margin: 0px 0 5px 5px;
+.square1 {
     width: 30px;
     height: 25px;
     background: white;
-    border:2px solid black;
+    border: 2px solid black;
     text-align: center;
 }
 
 .square2 {
-    margin: 0px 1px 5px 1px;
+
     width: 30px;
     height: 25px;
     background: white;
-    border:2px solid black;
+    border: 2px solid black;
     text-align: center;
 }
 
 .square3 {
-    margin: 0 0 0 5px;
+
     width: 25px;
     height: 25px;
     background: white;

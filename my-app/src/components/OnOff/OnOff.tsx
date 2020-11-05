@@ -10,7 +10,7 @@ function OnOff (props: PropsType) {
     let [on, setOn] = useState(false);
 
     const onStyle = {
-        margin: "10px 2px 0 5px",
+        margin: "10px 2px 0 0",
         width:  "30px",
         height: "20px",
         border: "2px solid black",
