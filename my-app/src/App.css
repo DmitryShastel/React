@@ -1,5 +1,6 @@
 body {
-    background-color: mediumspringgreen;
+    background-image: url("https://miro.medium.com/max/1050/1*i3hzpSEiEEMTuWIYviYweQ.png");
+    background-size: cover;
 }
 
 .App {
