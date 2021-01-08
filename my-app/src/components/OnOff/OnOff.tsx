@@ -5,7 +5,7 @@ type PropsType = {
     onChange: (on: boolean) => void
 }
 
-function OnOff (props: PropsType) {
+export function OnOff (props: PropsType) {
     console.log("on: " + props.on);
 
 
@@ -45,7 +45,7 @@ function OnOff (props: PropsType) {
     )
 }
 
-export default OnOff;
+
 
 
 
