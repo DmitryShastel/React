@@ -2,12 +2,13 @@ import React, {useState} from "react";
 
 type PropsType = {
     onChange: (on: boolean) => void
+    defaultOn?: boolean
 }
 
-function UncontrolledOnOff (props: PropsType) {
+export function UncontrolledOnOff (props: PropsType) {
     console.log("OnOff rendered");
 
-    let [on, setOn] = useState(false);
+    let [on, setOn] = useState(props.defaultOn ? props.defaultOn : false); //hook with init value
 
     const onStyle = {
         margin: "10px 2px 0 0",
@@ -55,7 +56,7 @@ function UncontrolledOnOff (props: PropsType) {
     )
 }
 
-export default UncontrolledOnOff;
+
 
 
 
