@@ -6,6 +6,7 @@ import {UncontrolledAccordion} from "./components/UncontrolledAccordion/Uncontro
 import {Accordion} from "./components/Accordion/Accordion";
 import {UncontrolledRating} from './components/UncontrolledRating/UncontrolledRating';
 import {OnOff} from "./components/OnOff/OnOff";
+import {onChange, Select} from "./components/Select/Select";
 
 
 function App() {
@@ -20,7 +21,6 @@ function App() {
 
             <UncontrolledOnOff onChange={setSwitchOn}/> {switchOn.toString()}
             <UncontrolledAccordion titleValue={"Menu"}/>
-
         </div>
 
 
