@@ -8,6 +8,7 @@ export type ActionPropsType = {
     type: string
 }
 
+export const UncontrolledAccordionMemo = React.memo(UncontrolledAccordion);
 
 export function UncontrolledAccordion(props: AccordionPropsType) {
     console.log("UncontrolledAccordion rendering")

@@ -14,6 +14,7 @@ export type AccordionPropsType = {
     color?: string
 }
 
+
 export function Accordion(props: AccordionPropsType) {
     console.log("Accordion rendering")
     return (

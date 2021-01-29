@@ -5,6 +5,8 @@ type PropsType = {
     defaultOn?: boolean
 }
 
+export const UncontrolledOnOffMemo = React.memo(UncontrolledOnOff)
+
 export function UncontrolledOnOff (props: PropsType) {
     console.log("OnOff rendered");
 
@@ -36,6 +38,7 @@ export function UncontrolledOnOff (props: PropsType) {
         display: "inline-block",
         backgroundColor: on ? "green" : "red",
     };
+
 
     const onClicked = () => {
         setOn(true)

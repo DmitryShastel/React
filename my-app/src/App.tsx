@@ -1,8 +1,8 @@
 import React, {useState} from 'react';
 import './App.css';
 import {RatingValueType} from "./components/Rating/Rating";
-import {UncontrolledOnOff} from "./components/UncontrolledOnOff/UncontrolledOnOff";
-import {UncontrolledAccordion} from "./components/UncontrolledAccordion/UncontrolledAccordion";
+import {UncontrolledOnOffMemo} from "./components/UncontrolledOnOff/UncontrolledOnOff";
+import {UncontrolledAccordionMemo} from "./components/UncontrolledAccordion/UncontrolledAccordion";
 
 
 function App() {
@@ -15,8 +15,8 @@ function App() {
     return (
         <div className="App">
 
-            <UncontrolledOnOff onChange={setSwitchOn}/> {switchOn.toString()}
-            <UncontrolledAccordion titleValue={"Menu"}/>
+            <UncontrolledOnOffMemo onChange={setSwitchOn}/> {switchOn.toString()}
+            <UncontrolledAccordionMemo titleValue={"Menu"}/>
         </div>
 
 
